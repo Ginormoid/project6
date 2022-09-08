@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="all.min.js"></script>
+    <style>
+         *{
+        box-sizing: border-box;
+    }
+    html, body{
+          width: 100%;
+          height: 100%;
+      }
+    body{
+        background-color: blanchedalmond;
+        align-items: center;
+        color: black;
+    }
+    .head{
+        width: 50%;
+        height: 60%;
+        margin: 10rem auto;
+        border: thin solid blanchedalmond;
+        border-radius: 0.5rem;
+    }
+    img{
+        float: left;
+        width: 50%;
+        height: 100%;
+        border-bottom-left-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+    }
+    .body{
+        width: 50%;
+        height: 100%;
+        float: right;
+        background-color: white;
+        padding: 1.5rem;
+        border-bottom-right-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+    }
+    button{
+        background-color: slateblue;
+        color: white;
+        padding: 1rem 1rem;
+        width: 100%;
+        border: none;
+        border-radius: 0.3rem;
+    }
+    /* For mobile phones: */
+    @media only screen and (max-width: 768px) {
+        .col-12 {width: 80%;}
+    }
+    h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+    }
+    h6{
+        font-weight: 100;
+        color: rgba(128, 128, 128, 0.736);
+        letter-spacing: 0.6rem;
+    }
+    p{
+        font-size: medium;
+        color: rgba(128, 128, 128, 0.736);
+    }
+    span{
+        font-size: small;
+        text-decoration: line-through;
+        margin-left: 2rem;
+    }
+
+        /* For mobile phones: */
+    [class*="col-"] {
+    width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+    </style>
+</head>
+<body>
+    <div class="head col-5 col-s-3">
+        <img class="col-6 col-s-12" src="photoshop-20190312-0001.jpg" alt="pic">
+        <div class="body col-6 col-s-12">
+            <h6>PERFUME</h6>
+            <h1>Gabrielle <br>Essence Eau De <br> Parfum</h1>
+            <p>A floral, solar and volumptuous <br>interpretation composed by <br>Olivier Palge, Perfumer-Creator <br>for the house of CHANEL.</p>
+            <p style="color: slateblue; font-size: xx-large;font-weight: 900;">$149.99 <span>$169.99</span></p>
+            <button><i class="fa fa cart"></i>Add to Cart</button>
+        </div>
+    </div>
+    
+</body>
+</html>
